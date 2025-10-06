@@ -4,12 +4,14 @@ import { PrincipalComponent } from './components/principal/principal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CabeceraComponent } from './components/cabecera/cabecera.component';
 
 
 
 @NgModule({
   declarations: [
-    PrincipalComponent
+    PrincipalComponent,
+    CabeceraComponent
   ],
   imports: [
     CommonModule,
