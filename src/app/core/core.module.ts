@@ -21,10 +21,15 @@ import { PieComponent } from './components/pie/pie.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    
+    // faltan módulos de lib-visual
+    // UltranetTablasModule,
+    // SysutilsModule,
+    // VisualModule
   ],
   exports: [
-    PrincipalComponent
+    PrincipalComponent,
+    CabeceraComponent,
+    PieComponent
   ],
 })
 export class CoreModule { }
