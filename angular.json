@@ -29,6 +29,8 @@
             ],
             "styles": [
               "src/styles.scss",
+              //"node_modules/@laranda/lib-visual/lib/styles/scss/_tema.scss",
+              //"node_modules/@laranda/lib-visual/lib/styles/scss/estilos_LA.scss",
               "node_modules/datatables.net-dt/css/dataTables.dataTables.min.css",
               "node_modules/datatables.net-buttons-dt/css/buttons.dataTables.min.css",
               "node_modules/datatables.net-select-dt/css/select.dataTables.min.css",
