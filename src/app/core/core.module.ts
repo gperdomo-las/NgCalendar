@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { CalendarGridComponent } from './components/calendar/calendar-grid/calendar-grid.component';
+import { CalendarDayCellComponent } from './components/calendar/calendar-day-cell/calendar-day-cell.component';
+import { CalendarEventComponent } from './components/calendar/calendar-event/calendar-event.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { CalendarGridComponent } from './components/calendar/calendar-grid/calen
     PrincipalComponent,
     CalendarComponent,
     CalendarGridComponent,
+    CalendarDayCellComponent,
+    CalendarEventComponent,
   ],
   imports: [
     CommonModule,
