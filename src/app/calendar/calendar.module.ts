@@ -7,14 +7,14 @@ import { CalendarComponent } from './components/calendar/calendar.component';
 
 @NgModule({
   declarations: [
-    CalendarComponent
+
   ],
   imports: [
     CommonModule,
     SharedModule
   ],
   exports: [
-      CalendarComponent
+
     ],
 })
 export class CalendarModule { 

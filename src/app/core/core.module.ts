@@ -7,11 +7,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CabeceraComponent } from './components/cabecera/cabecera.component';
 import { PieComponent } from './components/pie/pie.component';
 import { CalendarComponent } from '../calendar/components/calendar/calendar.component';
-import { CalendarHeaderComponent } from '../calendar/components/calendar-header/calendar-header.component';
 import { CalendarGridComponent } from '../calendar/components/calendar-grid/calendar-grid.component';
 import { CalendarDayCellComponent } from '../calendar/components/calendar-day-cell/calendar-day-cell.component';
 import { CalendarEventComponent } from '../calendar/components/calendar-event/calendar-event.component';
-
 
 
 @NgModule({
@@ -20,7 +18,6 @@ import { CalendarEventComponent } from '../calendar/components/calendar-event/ca
     CabeceraComponent,
     PieComponent,
     CalendarComponent,
-    CalendarHeaderComponent,
     CalendarGridComponent,
     CalendarDayCellComponent,
     CalendarEventComponent
