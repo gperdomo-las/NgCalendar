@@ -7,18 +7,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
-
-
+import { CalendarGridComponent } from './components/calendar/calendar-grid/calendar-grid.component';
 
 @NgModule({
   declarations: [
-    
-
-  
     HeaderComponent,
-               FooterComponent,
-               PrincipalComponent,
-               CalendarComponent
+    FooterComponent,
+    PrincipalComponent,
+    CalendarComponent,
+    CalendarGridComponent,
   ],
   imports: [
     CommonModule,
@@ -31,8 +28,6 @@ import { CalendarComponent } from './components/calendar/calendar.component';
     // SysutilsModule,
     // VisualModule
   ],
-  exports: [
-    
-  ],
+  exports: [],
 })
-export class CoreModule { }
+export class CoreModule {}
