@@ -1,1 +1,42 @@
-<p>calendar-grid works!</p>
+<!-- Grid Calendar -->
+<section class="relative py-8 sm:p-8">
+    <div class="w-full max-w-7xl mx-auto px-4 lg:px-8 xl:px-14">
+        <div class="flex items-center justify-between gap-3 mb-5">
+            <div class="flex items-center gap-4">
+                <div class="border border-gray-200">
+                    <!-- Grid superior días de la semana -->
+                    <div class="grid grid-cols-7 divide-gray-200 border-b border-gray-200">
+                        <div class="p-3.5 flex flex-col sm:flex-row items-center justify-between border-r border-gray-200">
+                            <span class="text-sm font-medium text-gray-500">Domingo</span>
+                        </div>
+                        <div class="p-3.5 flex flex-col sm:flex-row items-center justify-between border-r border-gray-200">
+                            <span class="text-sm font-medium text-gray-500">Lunes</span>
+                        </div>
+                        <div class="p-3.5 flex flex-col sm:flex-row items-center justify-between border-r border-gray-200">
+                            <span class="text-sm font-medium text-gray-500">Martes</span>
+                        </div>
+                        <div class="p-3.5 flex flex-col sm:flex-row items-center justify-between border-r border-gray-200">
+                            <span class="text-sm font-medium text-gray-500">Miércoles</span>
+                        </div>
+                        <div class="p-3.5 flex flex-col sm:flex-row items-center justify-between border-r border-gray-200">
+                            <span class="text-sm font-medium text-gray-500">Jueves</span>
+                        </div>
+                        <div class="p-3.5 flex flex-col sm:flex-row items-center justify-between border-r border-gray-200">
+                            <span class="text-sm font-medium text-gray-500">Viernes</span>
+                        </div>
+                        <div class="p-3.5 flex flex-col sm:flex-row items-center justify-between border-r border-gray-200">
+                            <span class="text-sm font-medium text-gray-500">Sábado</span>
+                        </div>
+                    </div>    
+                    <!-- Grid celda -->
+                    <div class="grid grid-cols-7 divide-gray-200">
+                        <app-calendar-day-cell
+                            *ngFor="let day of daysOfMonth"
+                            [dayNumber]="day">
+                        </app-calendar-day-cell>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>

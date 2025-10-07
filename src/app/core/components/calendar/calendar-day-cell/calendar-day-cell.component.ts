@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-calendar-day-cell',
@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalendarDayCellComponent implements OnInit {
 
+  @Input() dayNumber:number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
-    
   }
+
 
 }
