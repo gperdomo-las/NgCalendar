@@ -1,3 +1,4 @@
+import { DateAdapter, MatNativeDateModule, NativeDateAdapter } from '@angular/material/core';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -27,6 +28,7 @@ import { CalendarDayCellComponent } from './components/calendar/calendar-day-cel
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    MatNativeDateModule,
     // faltan módulos de lib-visual
     // UltranetTablasModule,
     // SysutilsModule,
@@ -40,6 +42,9 @@ import { CalendarDayCellComponent } from './components/calendar/calendar-day-cel
     CalendarGridComponent,
     CalendarDayCellComponent,
     CalendarEventComponent,
+  ],
+  providers: [
+    { provide: DateAdapter, useClass: NativeDateAdapter }
   ],
 })
 export class CoreModule {}
